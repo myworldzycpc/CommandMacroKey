@@ -1,4 +1,4 @@
-package com.xiaohunao.command_macro_key;
+package net.myworldzycpc.command_macro_key;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;

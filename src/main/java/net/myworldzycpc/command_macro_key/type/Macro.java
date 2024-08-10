@@ -1,7 +1,7 @@
-package com.xiaohunao.command_macro_key.type;
+package net.myworldzycpc.command_macro_key.type;
 
 import com.mojang.serialization.Codec;
-import com.xiaohunao.command_macro_key.CommandMacroKey;
+import net.myworldzycpc.command_macro_key.CommandMacroKey;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ServerData;
 import net.minecraft.client.player.LocalPlayer;
@@ -130,12 +130,12 @@ public abstract class Macro {
             }
             message = finalCommand;
 
+
             if (message.startsWith("/")) {
                 player.connection.sendCommand(message.substring(1));
             } else {
                 player.connection.sendChat(message);
             }
-
             this.isRemove = true;
         }
     }

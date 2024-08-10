@@ -1,9 +1,9 @@
-package com.xiaohunao.command_macro_key;
+package net.myworldzycpc.command_macro_key;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.xiaohunao.command_macro_key.type.Macro;
 import net.minecraft.client.Minecraft;
+import net.myworldzycpc.command_macro_key.type.Macro;
 
 import java.util.List;
 import java.util.Map;

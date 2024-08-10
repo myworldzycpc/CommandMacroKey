@@ -1,9 +1,9 @@
-package com.xiaohunao.command_macro_key;
+package net.myworldzycpc.command_macro_key;
 
 import com.google.common.collect.Maps;
-import com.xiaohunao.command_macro_key.type.MacroRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
+import net.myworldzycpc.command_macro_key.type.MacroRegistry;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;

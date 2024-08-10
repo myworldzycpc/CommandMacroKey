@@ -1,13 +1,13 @@
-package com.xiaohunao.command_macro_key.event;
+package net.myworldzycpc.command_macro_key.event;
 
-import com.xiaohunao.command_macro_key.CommandMacroKey;
-import com.xiaohunao.command_macro_key.MacroManager;
-import com.xiaohunao.command_macro_key.type.Macro;
+import net.minecraftforge.client.event.ClientChatEvent;
+import net.myworldzycpc.command_macro_key.CommandMacroKey;
+import net.myworldzycpc.command_macro_key.MacroManager;
+import net.myworldzycpc.command_macro_key.type.Macro;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.ClientChatEvent;
 import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,7 +25,7 @@ public class ClientHandler {
     @SubscribeEvent
     public static void onKeyInputEvent(InputEvent.Key event) {
         Minecraft minecraft = Minecraft.getInstance();
-        if (minecraft.screen != null || minecraft.player == null || event.getAction() != GLFW.GLFW_PRESS) {
+        if (minecraft.screen != null || minecraft.player == null || event.getAction() != GLFW.GLFW_PRESS){
             return;
         }
 
@@ -38,7 +38,7 @@ public class ClientHandler {
                     .flatMap(Collection::stream)
                     .forEach(macro -> {
                         if (macro.isKeyTriggered(key, modifiers)) {
-                            macro.setPressed(minecraft.level.getGameTime(), macro.hasOp());
+                            macro.setPressed(minecraft.level.getGameTime(),macro.hasOp());
                         }
                     });
         }
@@ -61,7 +61,6 @@ public class ClientHandler {
             }
         }
     }
-
     @SubscribeEvent
     public static void onPlayerDeath(TickEvent.PlayerTickEvent event) {
         if (event.phase != TickEvent.Phase.END) return;

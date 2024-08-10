@@ -1,4 +1,4 @@
-package com.xiaohunao.command_macro_key.type;
+package net.myworldzycpc.command_macro_key.type;
 
 public class PlaceholderRegistry {
 //    public static final ResourceKey<Registry<Macro.Placeholder>> KEY = ResourceKey.createRegistryKey(new ResourceLocation(CommandMacroKey.MOD_ID,"placeholder"));
